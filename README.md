@@ -100,7 +100,7 @@ Bonuses for providing:
 
 ![My Image](instructions/Postman_instruction_15.PNG)
 
-## Reflections
+## To-dos
 
 * It would be great to include the endpoint querying players scores against a specific opponent.
 * It would be great to include the endpoint saving players result of each game.
