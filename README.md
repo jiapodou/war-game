@@ -3,7 +3,7 @@ RESTful service of War Game
 
 ## Introduction
 
-This is the submission of the Aspen Capital's Software Engineer challenge by Peiyu (Steve) Hu. 
+This is the submission of WarGame coding challenge by Peiyu (Steve) Hu. 
 
 ### High Level
 
