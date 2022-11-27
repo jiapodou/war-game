@@ -125,7 +125,7 @@ public class Game {
         Card p2Third = null;
 
         // player1 lost since not enough cards
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 2; i++) {
             Card curCardP1 = player1.getHand().removeCard();
             if (curCardP1 == null) return PlayResult.LOSE;
             warCards.add(curCardP1);
@@ -133,7 +133,7 @@ public class Game {
         }
 
         // player1 won since opponent does not have enough cards
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 2; i++) {
             Card curCardP2 = player2.getHand().removeCard();
             if (curCardP2 == null) return PlayResult.WIN;
             warCards.add(curCardP2);
