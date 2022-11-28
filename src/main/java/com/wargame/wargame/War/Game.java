@@ -35,7 +35,15 @@ public class Game {
                     player1.getHand().addCards(cardsOnTable);
                     break;
                 case LOSE:
-                    player2.getHand().addCards(cardsOnTable);
+                    // add every two cards in reverse order if player 2 win
+                    for (int i = 0; i < cardsOnTable.size() / 2; i++) {
+                        player2.getHand().addCard(cardsOnTable.get(i * 2 + 1));
+                        player2.getHand().addCard(cardsOnTable.get(i * 2));
+                    }
+                    if (cardsOnTable.size() % 2 != 0) {
+                        int idx = cardsOnTable.size();
+                        player2.getHand().addCard(cardsOnTable.get(idx - 1));
+                    }
                     break;
                 case DRAW:
                     war(player1,player2,cardsOnTable);
